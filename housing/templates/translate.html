@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- service section -->
+    <div class="service">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="titlepage">
+                    <h2><img src="{% static 'images/heading_icon.png' %}" alt="#"/><span class="yellow">Traducción</span> <br> <span class="appp_l">Proceso de Traducción de Textos</span></h2>
+                    <p>Escribe en la siguiente caja de texto la oracion que requieres y el idioma a escoger</p>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="service_box">
+                    <i><img class= "service_image" src="{% static 'images/translate.png' %}" alt="#"/></i>
+                    <div class="service_text">
+                       <h3> Form Traduccion </h3>
+                        <form action = "" method = "post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <p>Pon aqui el texto a traducir<p>
+                                    {{translateform.text_to_translate}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <p>Pon aqui el idioma a traducir<p>
+                                    {{translateform.language_code_destiny}}
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="send_btn">Send</button>
+                            </div>
+                       </form>
+                       <p> {{responsetranslate}} </p>
+                    </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     <!-- end service section -->
+
+{% endblock %}

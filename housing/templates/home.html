@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- testimonial section -->
+    <div id="testimonial" class="testimonial">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2><img src="{% static 'images/heading_icon.png' %}" alt="#"/>Housing App</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="carousel-caption ">
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <div class="testimonial_box">
+                                        <figure><img src="{% static 'images/test.png' %}" alt="#"/></figure>
+                                        <p> Plataforma para poder generar tu intercambio de culturas y poder cruzar fronteras </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <div class="testimonial_box">
+                                        <figure><img src="{% static 'images/test.png' %}" alt="#"/></figure>
+                                        <p> Por medio de varios módulos se podran entender diferentes situaciones de la cultura de otros 
+                                            paises y podra ayudarte a mejorar tu experiencia de intercambio. </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <div class="testimonial_box">
+                                        <figure><img src="{% static 'images/test.png' %}" alt="#"/></figure>
+                                        <p> Selecciona cualquier de las opciones del menu superior para que puedas arrancar. </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <i class='fa fa-angle-left'></i>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <i class='fa fa-angle-right'></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- end testimonial section -->
+
+    {% endblock %}
+    
+   
